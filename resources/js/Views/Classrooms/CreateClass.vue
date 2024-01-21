@@ -174,7 +174,7 @@ export default {
             addClass() {
                 this.axios
                     .post('/api/classrooms', this.classrooms)
-                    .then(response => (
+                    .then(response => (                       
                         this.classrooms = response.data,
                         this.$router.push({ name: 'classroom' })
                     ))
