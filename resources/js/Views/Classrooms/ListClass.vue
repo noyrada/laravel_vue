@@ -1,5 +1,5 @@
 <template>
-<div class="font-bold text-lg mb-4">Classroom</div>
+<div class="font-bold text-lg mb-4">Classroom</div>s
 <div class="mb-3">
   <div class="isolate inline-flex rounded-md shadow-sm sm:space-x-3 sm:shadow-none">
     <span class="inline-flex sm:shadow-sm">             
@@ -107,7 +107,7 @@ export default {
         
         created() {
             this.axios
-                .get('/api/classrooms/')
+                .get('/api/classrooms')
                 .then(response => {
                     this.classrooms = response.data;
                 })
