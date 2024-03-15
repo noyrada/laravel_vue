@@ -44,6 +44,5 @@ export const routes = [
     { path: '/subjects/create', name: 'subjectsCreate', component: CreateSubject },
     { path: '/subjects/show/:id', name: 'subject.Show', component: ShowSubject },
     { path: '/subjects/edit/:id', name: 'subjects.edit', component: EditSubject },
-    
 
 ];
