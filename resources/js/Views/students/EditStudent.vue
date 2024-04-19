@@ -107,7 +107,7 @@
             this.axios
                 .get(`/api/students/${this.$route.params.id}`)
                 .then((res)=>{
-                    this.students = res.data
+                    this.students = res.datav
                 })
                 .catch(error=>console.log(error))
                 .finally(()=>this.loading= false)
