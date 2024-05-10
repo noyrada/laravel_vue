@@ -11,9 +11,7 @@ class ClassroomController extends Controller
 {
     public function index()
     {
-        //$classrooms = Classroom::with('students')->find($id);
         $classrooms = Classroom::with('subjects')->get();
-        
         return response()->json($classrooms);
     }
     public function getStudent()
@@ -39,7 +37,6 @@ class ClassroomController extends Controller
 
     public function show(string $id)
     {
-        //$classrooms = Classroom::with('students')->find($id);
         $classrooms = Classroom::with('subjects')->find($id);
         return response()->json($classrooms);
     }
